@@ -2,7 +2,7 @@
 layout: post
 title: "getSystemService，没那么简单"
 date: 2015-11-10
-categories:Binder
+categories:
 ---
 
 > 如果不记下，我怕忘记，我怕更加搞不懂逻辑
