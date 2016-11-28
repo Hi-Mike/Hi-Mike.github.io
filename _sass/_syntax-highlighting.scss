@@ -67,6 +67,5 @@
 .vi { color: #f8f8f2 } /* Name.Variable.Instance */
 .il { color: #ae81ff } /* Literal.Number.Integer.Long */
 }
-pre .highlight{
-    background: #272822; color: #f8f8f2
-}
+.highlight { background-color: #272822;}
+pre > code { background-color: #272822; border: 0; padding-right: 0; padding-left: 0; }
