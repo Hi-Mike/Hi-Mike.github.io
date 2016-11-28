@@ -27,7 +27,7 @@ Notification作为一个常用的功能，几乎所有的APP都会用上。前�
 
 最后简单的代码：
 
-```
+```java
 //setContentIntent等自行设置
 Notification notification = new NotificationCompat.Builder(this)
                 .setTicker("通知来啦")
@@ -52,7 +52,7 @@ Notification notification = new NotificationCompat.Builder(this)
 
 5.0以下和之上的字体样式不一样，所以得弄两套布局。给一下简单的代码：
 
-```
+```java
 RemoteViews remoteViews = new RemoteViews(getPackageName(), R.layout.notification_custom);
         Notification notification = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.mipmap.notify)
@@ -61,7 +61,7 @@ RemoteViews remoteViews = new RemoteViews(getPackageName(), R.layout.notificatio
         notificationManager.notify(1, notification);
 ```
 
-```
+```java
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -96,7 +96,7 @@ RemoteViews remoteViews = new RemoteViews(getPackageName(), R.layout.notificatio
 
 在一些情况下，应用可以将Service与Notification结合，如一些音乐类的应用，将Service转为前台以此提高优先级。
 
-```
+```java
 RemoteViews remoteViews = new RemoteViews(getPackageName(), R.layout.notification_custom);
         Notification notification = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.mipmap.notify)
