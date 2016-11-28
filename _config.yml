@@ -11,4 +11,6 @@ github_username: Hi-Mike
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 markdown_ext: markdown,mkdown,mkdn,mkd,md

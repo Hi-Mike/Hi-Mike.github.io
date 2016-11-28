@@ -26,6 +26,7 @@ Notification作为一个常用的功能，几乎所有的APP都会用上。前�
 逼格还是提升了不少的。
 
 最后简单的代码：
+
 ```
 //setContentIntent等自行设置
 Notification notification = new NotificationCompat.Builder(this)
