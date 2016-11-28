@@ -132,34 +132,34 @@ SystemServiceRegistry，从名字我们就可以知道一二了，在SystemServi
 
 ```java
 	private static IServiceManager getIServiceManager() {
-34        if (sServiceManager != null) {
-35            return sServiceManager;
-36        }
-39        sServiceManager = ServiceManagerNative.asInterface(BinderInternal.getContextObject());
-40        return sServiceManager;
-41    }
-42
-49    public static IBinder getService(String name) {
-50        try {
-51            IBinder service = sCache.get(name);
-52            if (service != null) {
-53                return service;
-54            } else {
-55                return getIServiceManager().getService(name);
-56            }
-57        } catch (RemoteException e) {
-58            Log.e(TAG, "error in getService", e);
-59        }
-60        return null;
-61    }
+        if (sServiceManager != null) {
+            return sServiceManager;
+        }
+        sServiceManager = ServiceManagerNative.asInterface(BinderInternal.getContextObject());
+        return sServiceManager;
+    }
 
-70    public static void addService(String name, IBinder service) {
-71        try {
-72            getIServiceManager().addService(name, service, false);
-73        } catch (RemoteException e) {
-74            Log.e(TAG, "error in addService", e);
-75        }
-76    }
+    public static IBinder getService(String name) {
+        try {
+            IBinder service = sCache.get(name);
+            if (service != null) {
+                return service;
+            } else {
+                return getIServiceManager().getService(name);
+            }
+        } catch (RemoteException e) {
+            Log.e(TAG, "error in getService", e);
+        }
+        return null;
+    }
+
+    public static void addService(String name, IBinder service) {
+        try {
+            getIServiceManager().addService(name, service, false);
+        } catch (RemoteException e) {
+            Log.e(TAG, "error in addService", e);
+        }
+    }
 ```
 
 原来ServiceManager也只是一个躯壳，真正的操作是通过ServiceManagerNative获取一个IServiceManager的对象来操作的。查看ServiceManagerNative的源码，如果对android的AIDL及Binder有一定的了解，ServiceManagerNative的代码似乎很是熟悉，其实就是实现了Binder机制中的server和client，只是在建立连接的时候通过BinderInternal得到的是一个native的实现。ServiceManager算是建立起来了，回头看看AlarmManagerService：

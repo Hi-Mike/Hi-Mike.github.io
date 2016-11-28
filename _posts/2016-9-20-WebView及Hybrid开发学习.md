@@ -13,7 +13,7 @@ categories:
 
 使用WebView加载网页真是超级简单，
 
-```
+```java
 	private void setWebView() {
 		//记住设置WebViewClient，不然应用不认，会使用外部浏览器来打开
         webView.setWebViewClient(new WebViewClient());
@@ -23,13 +23,13 @@ categories:
 
 最后记得加上权限，
 
-```
+```xml
 	<uses-permission android:name="android.permission.INTERNET" />
 ```
 
 就是这样，打开百度还能搜两下，只是会发现百度是精简版，有些网页还显示不大对。这是因为没有为WebView设置JavaScript的支持。
 
-```
+```java
 	WebSettings settings = webView.getSettings();
     settings.setJavaScriptEnabled(true);//设置JavaScript可用
 ```
@@ -48,7 +48,7 @@ categories:
 
 单页面的话，这个样子就可以了。要是涉及到页面内的加载可能需要返回的效果：
 
-```
+```java
 	@Override
     public void onBackPressed() {
         if (webView.canGoBack()) {
@@ -67,7 +67,7 @@ categories:
 
 最后，现在明显的加载网页的页面都会写一个顶部的ProgressBar，网上主要有两种写法，一个是对WebView进行封装，一个是直接布局:
 
-```
+```java
 	//看，WebChromeClient，进度
 	webView.setWebChromeClient(new WebChromeClient() {
             @Override
@@ -91,7 +91,7 @@ categories:
 
 具体的就参考下面第一篇参考文章，写的很详细了。平时用的少，不做什么封装，不考虑耦合，从H5调用下Native的代码还是可以的。如果要在多个地方使用，形成一套规范就得多花时间了。
 
-```
+```java
 	webView.setWebViewClient(new WebViewClient() {
          @Override
          public boolean shouldOverrideUrlLoading(WebView view, String url) {
