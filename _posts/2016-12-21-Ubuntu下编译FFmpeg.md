@@ -2,7 +2,7 @@
 layout: post
 title: "Ubuntu下编译FFmpeg"
 date: 2016-12-21
-categories:ffmpeg
+categories: ffmpeg
 ---
 
 ## 环境
