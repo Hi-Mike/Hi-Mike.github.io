@@ -2,7 +2,7 @@
 layout: post
 title: "Notification学习及兼容性解决"
 date: 2016-10-14
-categories:
+categories:android
 ---
 
 Notification作为一个常用的功能，几乎所有的APP都会用上。前段时间做项目的时候写出的代码在Android 5.0以上的效果很差，正好看到郭霖的blog正好讲了一个微技巧，很有用，完美解决了问题。
