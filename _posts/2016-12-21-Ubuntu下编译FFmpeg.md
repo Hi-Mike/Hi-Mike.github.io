@@ -12,7 +12,7 @@ NDK
 ## 下载FFmpeg
 可以到官网[FFmpeg](http://www.ffmpeg.org/)下载，或者[GitHub镜像](https://github.com/FFmpeg/FFmpeg)，直接利用Git管理，也方便以后更新版本（初次下载较慢）
 
-```bash
+```git
 git clone https://github.com/FFmpeg/FFmpeg.git
 ```
 
