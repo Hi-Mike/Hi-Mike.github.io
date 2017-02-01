@@ -90,6 +90,10 @@
 
 /* Individual Posts
  * ============================================== */
+    .home,.post{
+        background:#FFFFFF;
+        padding:30px;
+    }
     .page-content {
         padding: $spacing-unit 0;
         text-align: justify;
@@ -146,8 +150,7 @@
 	color: $grey-color-light;
 	text-transform: uppercase;
 	display: inline-block;
-	position:absolute;
-	right:26%;
+	float: right;
  }
 
 /* Post Format
