@@ -2,7 +2,7 @@
  * ============================================== */
     .site-header {
         height: 55px;
-        background-color: #F5F5F5;
+        background-color: #fafaee;
         position: relative;
         width: 100%;
     }
@@ -91,7 +91,7 @@
 /* Individual Posts
  * ============================================== */
     .home,.post{
-        background:#FFFFFF;
+        background:url('/bg.png');
         padding:30px;
     }
     .page-content {
@@ -135,7 +135,7 @@
 
     .post-meta {
         font-size: $small-font-size;
-        color: $grey-color-light;
+        color: #a7a7a7;
         text-transform: uppercase;
         display: inline-block;
     }
@@ -147,7 +147,7 @@
  }
  .post-next {
 	font-size: $small-font-size;
-	color: $grey-color-light;
+	color: #a7a7a7;
 	text-transform: uppercase;
 	display: inline-block;
 	float: right;
