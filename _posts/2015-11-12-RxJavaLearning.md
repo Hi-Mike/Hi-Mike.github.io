@@ -9,7 +9,7 @@ categories:
 
 接触RxJava才短短的几个月，甚是喜欢。虽然平时写点简单的还行，稍微有点挑战便力不从心，用的不好，出了bug也是常有的事。
 
-后来看到 **扔物线** 写的 [给 Android 开发者的 RxJava 详解](http://gank.io/post/560e15be2dca930e00da1083) ,受益颇多！心想如果不自己捋一捋，难免心有芥蒂，何况其中的来龙去脉确实值得推敲一番。另外 [深入浅出RxJava(译)](http://blog.csdn.net/lzyzsd/article/details/41833541) 也是很好的资料，原文出处 [Dan Lew Codes](http://blog.danlew.net/) 更值得推荐，不得不感叹学习英文的重要性。
+后来看到 **扔物线** 写的 [给Android开发者的RxJava详解](http://gank.io/post/560e15be2dca930e00da1083) ,受益颇多！心想如果不自己捋一捋，难免心有芥蒂，何况其中的来龙去脉确实值得推敲一番。另外 [深入浅出RxJava(译)](http://blog.csdn.net/lzyzsd/article/details/41833541) 也是很好的资料，原文出处 [Dan Lew Codes](http://blog.danlew.net/) 更值得推荐，不得不感叹学习英文的重要性。
 
 ### 基本原理
 
