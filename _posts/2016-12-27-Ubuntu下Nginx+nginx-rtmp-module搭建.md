@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ubuntu下Nginx+nginx-rtmp-module搭建"
-date: 2017-12-27
+date: 2016-12-27
 categories: nginx rtmp
 ---
 
